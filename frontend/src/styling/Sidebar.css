@@ -1,0 +1,59 @@
+.sidebar {
+  width: 280px;
+  box-sizing: border-box;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-right: 1px solid #e7e5e4;
+  font-family: "Inter", system-ui, sans-serif;
+  color: #1c1917;
+}
+.sb-eyebrow { margin: 0 0 6px; font-size: 10px; letter-spacing: 0.04em; color: #b8442a; }
+.sb-title { margin: 0 0 6px; font-size: 26px; font-weight: 700; }
+.sb-sub { margin: 0 0 20px; font-size: 12px; color: #57534e; }
+
+.sb-location {
+  padding: 10px 12px;
+  margin-bottom: 24px;
+  background: #f3f0ea;
+  border: 1px solid #e7e2d8;
+  border-radius: 8px;
+  font-size: 11px;
+  color: #57534e;
+}
+.sb-location strong { display: block; margin-bottom: 2px; font-size: 12px; color: #1c1917; }
+
+.sb-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 14px; }
+.sb-head h2 { margin: 0; font-size: 14px; font-weight: 700; }
+.sb-head span { font-size: 11px; color: #57534e; }
+
+.sb-stops { list-style: none; margin: 0 0 24px; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.sb-card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: "name dist" "routes mins";
+  row-gap: 10px;
+  padding: 14px;
+  border: 1px solid #e7e5e4;
+  border-radius: 8px;
+}
+.sb-name { grid-area: name; font-size: 14px; font-weight: 600; }
+.sb-dist { grid-area: dist; font-size: 11px; text-align: right; color: #57534e; }
+.sb-routes { grid-area: routes; font-size: 11px; color: #57534e; }
+.sb-next { display: block; margin-top: 4px; font-weight: 600; color: #b8442a; }
+.sb-mins { grid-area: mins; align-self: end; justify-self: end; font-size: 28px; font-weight: 700; line-height: 1; color: #b8442a; text-align: right; }
+
+.sb-button {
+  padding: 14px;
+  border: 0;
+  border-radius: 8px;
+  background: #b8442a;
+  color: #fff;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.sb-button:hover { background: #9f3a23; }
+.sb-note { margin: 14px 0 0; font-size: 11px; color: #57534e; }

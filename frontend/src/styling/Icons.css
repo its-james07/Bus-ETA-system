@@ -1,0 +1,32 @@
+.locate-btn {
+  position: absolute;
+  right: 16px;
+  bottom: 136px; /* above the zoom buttons */
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(36, 55, 70, 0.15);
+  background: #ffffff;
+  color: #172a35;
+  box-shadow: 0 2px 8px rgba(23, 42, 53, 0.18);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, transform 0.1s;
+}
+
+.locate-btn:hover {
+  background: #f2f0e8;
+}
+
+.locate-btn:active {
+  background: #b84725;
+  color: #ffffff;
+  transform: scale(0.96);
+}
+
+.locate-btn:focus-visible {
+  outline: 2px solid #b84725;
+  outline-offset: 2px;
+} 

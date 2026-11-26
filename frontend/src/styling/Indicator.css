@@ -1,0 +1,48 @@
+.indicator {
+  position: absolute;
+  left: 16px;
+  bottom: 40px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 15px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(23, 42, 53, 0.15);
+}
+
+.indicator-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #172a35;
+}
+
+.indicator-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.indicator-item.bus {
+  color: #b84725;
+}
+.indicator-item.bus .indicator-dot {
+  background: #b84725;
+}
+
+.indicator-item.stop .indicator-dot {
+  background: transparent;
+  border: 2px solid #172a35;
+}
+
+.indicator-item.you {
+  color: #3b8c79;
+}
+.indicator-item.you .indicator-dot {
+  background: #3b8c79;
+}

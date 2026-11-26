@@ -18,22 +18,22 @@ L.Icon.Default.mergeOptions({
   shadowUrl: markerShadow,
 });
 
-const KATHMANDU = [27.73977, 85.335745];
+const KATHMANDU = [27.7185, 85.3109];
 const KEY = import.meta.env.VITE_MAPTILER_KEY;
 
 export default function KathmanduMap() {
   return (
     <MapContainer
       center={KATHMANDU}
-      zoom={13}
+      zoom={18}
       attributionControl={false}
       style={{ height: "100vh", width: "100%" }}
     >
       <AttributionControl prefix={false} position="bottomright" />
       <TileLayer
         attribution='&copy; <a href="https://www.maptiler.com/copyright/">MapTiler</a> &copy; OpenStreetMap contributors'
-        url={`https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=${KEY}`}
-        maxZoom={19}
+        url={`https://api.maptiler.com/maps/dataviz/{z}/{x}/{y}.png?key=${KEY}`}
+        maxZoom={22}
       />
       <Marker position={KATHMANDU}>
         <Popup>Kathmandu</Popup>

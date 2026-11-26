@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+.route-list {
+  --rl-bg: #ffffff;
+  --rl-border: #e1e4e8;
+  --rl-text: #1f2d3d;
+  --rl-muted: #3d4b5c;
+  --rl-badge: #243746;
+  --rl-badge-active: #b94a23;
+
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 20px 16px 32px;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--rl-text);
+}
+
+.route-list__summary {
+  margin: 0 0 16px 4px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.route-list__items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.route-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding: 18px 16px;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  background: var(--rl-bg);
+  border: 1px solid var(--rl-border);
+  border-radius: 14px;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.route-card:hover {
+  border-color: transparent;
+  box-shadow: 0 6px 18px rgba(31, 45, 61, 0.12);
+  transform: translateY(-2px);
+}
+
+.route-card:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(31, 45, 61, 0.12);
+}
+
+.route-card:focus-visible {
+  outline: 2px solid var(--rl-badge-active);
+  outline-offset: 2px;
+}
+
+.route-card__badge {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 66px;
+  height: 66px;
+  border-radius: 14px;
+  background: var(--rl-badge);
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.route-card--active .route-card__badge {
+  background: var(--rl-badge-active);
+}
+
+.route-card__info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.route-card__name {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.route-card__meta {
+  font-size: 15px;
+  color: var(--rl-muted);
+}
+
+.route-card__chevron {
+  flex: none;
+  width: 34px;
+  height: 34px;
+  fill: none;
+  stroke: var(--rl-text);
+  stroke-width: 1.4;
+}

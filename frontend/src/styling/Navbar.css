@@ -1,0 +1,31 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 20px;
+  background: #fff;
+  border-radius: 8px;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 14px;
+  color: #1c1917;
+}
+.nav-brand { display: flex; align-items: center; gap: 12px; font-size: 18px; font-weight: 600; }
+.nav-logo {
+  width: 40px; height: 40px;
+  display: grid; place-items: center;
+  background: #c2410c;
+  border-radius: 10px;
+}
+.nav-links { display: flex; gap: 28px; }
+.nav-links a { color: #1c1917; text-decoration: none; }
+.nav-links a:hover { color: #c2410c; }
+.nav-links a.active { color: #c2410c; font-weight: 600; }
+.nav-status { display: flex; align-items: center; gap: 14px; font-weight: 600; }
+.nav-pill {
+  display: flex; align-items: center; gap: 8px;
+  padding: 8px 16px;
+  background: #f0ece4;
+  border-radius: 999px;
+  font-size: 12px; font-weight: 500;
+}
+.nav-dot { width: 8px; height: 8px; border-radius: 50%; background: #16a34a; }
